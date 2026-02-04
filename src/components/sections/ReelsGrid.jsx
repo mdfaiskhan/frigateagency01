@@ -1,8 +1,13 @@
 import React from "react"
-import reel01 from "../../assets/videos/reel_01.mp4"
-import reel02 from "../../assets/videos/reel_02.mp4"
-import reel03 from "../../assets/videos/reel_03.mp4"
-import reel04 from "../../assets/videos/reel_04.mp4"
+
+const reel01 =
+  "https://res.cloudinary.com/duj90wrub/video/upload/v1770236680/reel_01_uvac4g.mp4"
+const reel02 =
+  "https://res.cloudinary.com/duj90wrub/video/upload/v1770236671/reel_02_wfyfhb.mp4"
+const reel03 =
+  "https://res.cloudinary.com/duj90wrub/video/upload/v1770236672/reel_03_jr85ft.mp4"
+const reel04 =
+  "https://res.cloudinary.com/duj90wrub/video/upload/v1770236673/reel_04_xttgmv.mp4"
 
 const reels = [
   {

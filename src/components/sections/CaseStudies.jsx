@@ -1,6 +1,9 @@
 import { caseStudiesData } from "../../data/caseStudies"
-import mannat_reels from "../../assets/videos/mannat_reels.mp4"
-import mannat_reels2 from "../../assets/videos/mannat_reels2.mp4"
+
+const mannatReels =
+  "https://res.cloudinary.com/duj90wrub/video/upload/v1770236343/mannat_reels_vdmzpa.mp4"
+const mannatReels2 =
+  "https://res.cloudinary.com/duj90wrub/video/upload/v1770236577/mannat_reels2_hobklg.mp4"
 
 const CaseStudies = () => {
   const cs = caseStudiesData[0]
@@ -44,7 +47,7 @@ const CaseStudies = () => {
         <div className="case-intro-reels">
           <div className="reel-card">
             <video
-              src={mannat_reels}
+              src={mannatReels}
               autoPlay
               muted
               loop
@@ -54,7 +57,7 @@ const CaseStudies = () => {
 
           <div className="reel-card">
             <video
-              src={mannat_reels2}
+              src={mannatReels2}
               autoPlay
               muted
               loop

@@ -1,4 +1,5 @@
-import heroVideo from "../../assets/videos/hero_background.mp4"
+const heroVideo =
+  "https://res.cloudinary.com/duj90wrub/video/upload/v1770235971/hero_background_xikplw.mp4"
 
 const Hero = () => {
   return (
