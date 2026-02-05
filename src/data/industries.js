@@ -1,134 +1,123 @@
 export const industriesData = [
-    {
-      slug: "ecommerce",
-      title: "E-commerce Marketing Services",
-      intro:
-        "We help e-commerce brands scale predictable and profitable revenue through performance-driven digital marketing.",
-      solutions:
-        "We manage high-ROAS Meta and Google Shopping Ads, create product creatives and UGC-style videos, optimize product and checkout pages, and run retargeting campaigns to recover abandoned carts.",
-      results:
-        "Brands experience increased sales, improved ROAS, higher average order value, and sustainable long-term growth."
-    },
-  
-    {
-      slug: "real-estate",
-      title: "Real Estate Marketing Services",
-      intro:
-        "We help real estate developers and brokers generate high-quality buyer and investor leads using targeted digital campaigns.",
-      solutions:
-        "Our services include Meta, Google, and YouTube Ads, project landing pages, CRM integrations, and walkthrough videos with location-based targeting.",
-      results:
-        "Clients see better lead quality, lower cost per lead, faster sales cycles, and stronger brand credibility."
-    },
-  
-    {
-      slug: "healthcare",
-      title: "Healthcare Marketing Services",
-      intro:
-        "We provide ethical, trust-focused digital marketing for clinics, hospitals, and wellness brands.",
-      solutions:
-        "We run Google Ads for appointments, local SEO, Google Maps optimization, professional websites, and patient-focused content.",
-      results:
-        "Healthcare brands gain increased patient inquiries, improved local visibility, and stronger trust."
-    },
-  
-    {
-      slug: "education",
-      title: "Education & EdTech Marketing Services",
-      intro:
-        "We help educational institutions attract high-intent students and increase enrollments.",
-      solutions:
-        "Our services include admission lead campaigns, course promotions, video testimonials, SEO, and enrollment-focused landing pages.",
-      results:
-        "Institutions experience higher-quality leads, reduced cost per enrollment, and consistent admissions growth."
-    },
-  
-    {
-      slug: "hospitality",
-      title: "Hospitality & Travel Marketing Services",
-      intro:
-        "We help hotels, restaurants, and travel brands increase bookings and footfall.",
-      solutions:
-        "We deliver social media marketing, reels, Google Ads, local SEO, influencer collaborations, and booking-optimized websites.",
-      results:
-        "Hospitality brands see higher occupancy, better visibility, and stronger customer engagement."
-    },
-  
-    {
-      slug: "finance",
-      title: "Finance & Insurance Marketing Services",
-      intro:
-        "We build trust-focused digital marketing systems for financial and insurance brands.",
-      solutions:
-        "Our strategies include lead generation campaigns, compliance-friendly messaging, SEO, and brand credibility building.",
-      results:
-        "Clients achieve high-quality leads, stronger trust, and predictable growth."
-    },
-  
-    {
-      slug: "saas",
-      title: "IT, SaaS & Technology Marketing Services",
-      intro:
-        "We help tech companies generate qualified B2B leads and build authority.",
-      solutions:
-        "We use LinkedIn Ads, performance funnels, content marketing, SEO, and product-focused landing pages.",
-      results:
-        "Tech brands see improved lead quality, shorter sales cycles, and scalable growth."
-    },
-  
-    {
-      slug: "manufacturing",
-      title: "Manufacturing & Industrial Marketing Services",
-      intro:
-        "We help manufacturing brands improve digital visibility and distributor lead generation.",
-      solutions:
-        "Our services include B2B branding, SEO, distributor funnels, and digital presence optimization.",
-      results:
-        "Clients experience better distributor inquiries and stronger market positioning."
-    },
-  
-    {
-      slug: "fmcg",
-      title: "FMCG & Consumer Brand Marketing Services",
-      intro:
-        "We help consumer brands increase market penetration and brand recall.",
-      solutions:
-        "Our strategies include influencer marketing, paid ads, creative campaigns, and social media growth.",
-      results:
-        "Brands gain higher reach, engagement, and customer recall."
-    },
-  
-    {
-      slug: "startups",
-      title: "Startup & Local Business Marketing Services",
-      intro:
-        "We help startups validate ideas, acquire early users, and scale efficiently.",
-      solutions:
-        "We provide landing pages, paid ads, brand positioning, content marketing, and funnel optimization.",
-      results:
-        "Startups see faster traction, optimized spend, and measurable growth."
-    },
-  
-    {
-      slug: "b2b",
-      title: "Corporate & B2B Marketing Services",
-      intro:
-        "We help B2B companies build authority and generate decision-maker leads.",
-      solutions:
-        "Our services include LinkedIn Ads, SEO, case studies, corporate branding, and lead funnels.",
-      results:
-        "Clients benefit from improved pipeline quality and predictable lead flow."
-    },
-  
-    {
-      slug: "personal-brand",
-      title: "Personal Brand Marketing Services",
-      intro:
-        "We help individuals build influence, authority, and visibility online.",
-      solutions:
-        "We deliver content strategy, video production, paid promotion, websites, and personal brand positioning.",
-      results:
-        "Clients experience increased engagement, inbound opportunities, and monetization."
-    }
-  ]
+  {
+    slug: "ecommerce",
+    title: "E-commerce Marketing Services",
+    chipLabel: "E-COMMERCE",
+    icon: "cart",
+    overviewTitle: "Scale Your E-commerce Brand with Performance Marketing",
+    intro:
+      "At Frigate Agency, we help e-commerce brands grow predictable and profitable revenue through performance-driven digital marketing. Our approach focuses on the full customer journey—from product discovery to repeat purchases—ensuring every marketing effort contributes directly to sales. We combine data-backed strategies with high-impact creatives to attract the right audience and convert them efficiently. Whether you’re a growing D2C brand or an established online store, our team works to maximize ROAS, improve conversion rates, and build long-term brand value through scalable systems designed for consistent growth.",
+    solutionsTitle: "Our E-commerce Growth Solutions",
+    solutions:
+      "Our e-commerce marketing solutions are built to deliver measurable results at every stage of the funnel. We manage high-ROAS Meta and Google Shopping Ads, create scroll-stopping product creatives and UGC-style videos, and optimize product and checkout pages for better conversions. Retargeting campaigns help recover abandoned carts, while SEO drives consistent organic sales. With accurate tracking, analytics, and reporting, we ensure complete transparency so you always know what’s working and where your revenue is coming from.",
+    resultsTitle: "Results You Can Expect",
+    results:
+      "E-commerce brands working with Frigate Agency experience increased sales, improved average order value, and lower cost per purchase. Our strategies are designed to create sustainable growth, not short-term spikes. By combining performance ads, creative optimization, and data analysis, we help brands build strong visibility, customer loyalty, and repeat purchases. The result is a scalable marketing system that supports long-term profitability and brand expansion."
+  },
+  {
+    slug: "real-estate",
+    title: "Real Estate Marketing Services",
+    chipLabel: "REAL ESTATE",
+    icon: "home",
+    overviewTitle: "High-Quality Real Estate Leads That Convert",
+    intro:
+      "Real estate marketing requires trust, precision, and strong visual communication. Frigate Agency helps real estate developers, brokers, and agents generate high-quality buyer and investor leads using targeted digital campaigns. We focus on attracting serious inquiries rather than just volume, ensuring better lead quality and higher conversion potential. Our approach combines performance advertising with strategic messaging to position your projects effectively and connect with the right audience at the right time.",
+    solutionsTitle: "Our Real Estate Marketing Expertise",
+    solutions:
+      "We offer end-to-end real estate marketing solutions, including Meta, Google, and YouTube Ads for property promotions. Our team builds dedicated landing pages for projects, integrates CRM systems for lead management, and creates professional walkthrough videos and reels. With precise location-based targeting and audience segmentation, we ensure your campaigns reach high-intent buyers and investors while maintaining strong brand positioning.",
+    resultsTitle: "Business Impact for Real Estate Brands",
+    results:
+      "Our real estate clients benefit from a consistent flow of verified inquiries, improved lead quality, and lower cost per lead. We help increase project visibility, build brand credibility, and support faster sales cycles. With performance tracking and optimization, our strategies are focused on long-term success and measurable ROI."
+  },
+  {
+    slug: "healthcare",
+    title: "Healthcare Marketing Services",
+    chipLabel: "HEALTHCARE",
+    icon: "heart",
+    overviewTitle: "Ethical & Trust-Focused Healthcare Marketing",
+    intro:
+      "Healthcare marketing demands accuracy, ethics, and patient trust. Frigate Agency helps healthcare providers grow digitally while maintaining professional credibility. Our strategies focus on educating patients, improving discoverability, and generating appointment-based inquiries. We ensure compliance-friendly messaging that builds confidence and long-term trust with your audience.",
+    solutionsTitle: "Our Healthcare Digital Solutions",
+    solutions:
+      "Our healthcare services include Google Ads for appointment bookings, local SEO and Google Maps optimization, and patient-focused content creation. We design professional websites for clinics and hospitals, manage online reviews, and improve digital reputation. Every campaign is backed by analytics and transparent reporting to ensure accountability.",
+    resultsTitle: "Measurable Healthcare Growth",
+    results:
+      "With Frigate Agency, healthcare brands experience increased patient inquiries, stronger local visibility, and improved trust. Our marketing systems are designed to deliver steady growth while maintaining ethical standards and brand integrity."
+  },
+  {
+    slug: "education",
+    title: "Education Marketing Services",
+    chipLabel: "EDUCATION",
+    icon: "grad",
+    overviewTitle: "Drive Admissions with High-Intent Student Leads",
+    intro:
+      "We help educational institutions attract students who are genuinely interested in enrolling. Our admission-focused marketing strategies combine performance advertising with storytelling content that highlights academic value and outcomes. We understand admission cycles and student decision behavior, allowing us to design campaigns that convert interest into enrollments.",
+    solutionsTitle: "Education Marketing Services We Offer",
+    solutions:
+      "Our education marketing services include admission lead generation campaigns, course promotions through Meta and Google Ads, video testimonials, and enrollment-focused landing pages. We also provide SEO for institutions and programs to build long-term visibility and authority.",
+    resultsTitle: "Results for Education Brands",
+    results:
+      "Institutions working with us see higher-quality leads, reduced cost per enrollment, and stronger brand presence. Our goal is sustainable admissions growth backed by data and performance insights."
+  },
+  {
+    slug: "startups",
+    title: "Startup Marketing Services",
+    chipLabel: "STARTUPS",
+    icon: "rocket",
+    overviewTitle: "Growth-Focused Marketing for Startups",
+    intro:
+      "Startups need speed, clarity, and measurable traction. Frigate Agency helps startups validate ideas, acquire early users, and scale efficiently. Our lean marketing approach ensures maximum impact with optimized budgets and rapid execution.",
+    solutionsTitle: "How We Help Startups Scale",
+    solutions:
+      "We support startups with brand positioning, landing page development, paid ads for traction, content marketing, and funnel optimization. Our strategies are flexible and data-driven, allowing quick adjustments as the business grows.",
+    resultsTitle: "Why Startups Choose Frigate Agency",
+    results:
+      "Startups choose us for our agility, transparency, and growth mindset. We focus on real metrics—leads, users, and revenue—rather than vanity numbers."
+  },
+  {
+    slug: "b2b",
+    title: "Corporate / B2B Marketing Services",
+    chipLabel: "CORPORATE / B2B",
+    icon: "megaphone",
+    overviewTitle: "B2B Marketing That Builds Authority & Leads",
+    intro:
+      "We help B2B companies generate qualified decision-maker leads while building strong brand authority. Our strategies focus on trust, positioning, and long-term pipeline growth.",
+    solutionsTitle: "Our B2B Marketing Capabilities",
+    solutions:
+      "Our B2B services include LinkedIn Ads, lead generation funnels, corporate branding, SEO, and high-converting websites. We also create case studies and thought leadership content.",
+    resultsTitle: "Business Outcomes We Deliver",
+    results:
+      "Clients benefit from improved lead quality, stronger brand trust, and a more predictable sales pipeline supported by data-driven marketing."
+  },
+  {
+    slug: "hospitality",
+    title: "Hospitality Marketing Services",
+    chipLabel: "HOSPITALITY",
+    icon: "bed",
+    overviewTitle: "Fill Rooms, Tables & Experiences with Digital Marketing",
+    intro:
+      "We help hospitality brands attract guests through visually engaging content and local performance campaigns. Our strategies focus on bookings, footfall, and brand recall.",
+    solutionsTitle: "Hospitality Marketing Services",
+    solutions:
+      "Our services include social media management, reels, Google Ads, local SEO, influencer collaborations, and booking-optimized websites.",
+    resultsTitle: "Growth You Can Expect",
+    results:
+      "Hospitality brands see higher bookings, improved visibility, and stronger customer engagement through consistent digital presence."
+  },
+  {
+    slug: "personal-brand",
+    title: "Personal Brand Marketing Services",
+    chipLabel: "PERSONAL BRANDS",
+    icon: "user",
+    overviewTitle: "Build Influence, Authority & Visibility Online",
+    intro:
+      "We help individuals build powerful personal brands that attract opportunities and monetization. Our strategies focus on storytelling, consistency, and authority building.",
+    solutionsTitle: "Personal Brand Growth Solutions",
+    solutions:
+      "We provide content strategy, video production, paid promotion, website development, and brand positioning tailored to personal brands.",
+    resultsTitle: "Personal Brand Results",
+    results:
+      "Clients experience increased engagement, authority, and inbound leads, helping them grow influence and income sustainably."
+  }
+]
   

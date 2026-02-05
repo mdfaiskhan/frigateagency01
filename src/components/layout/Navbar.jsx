@@ -40,10 +40,10 @@ const Navbar = () => {
           {/* CENTER NAV */}
           <nav className={`navbar-links ${menuOpen ? "open" : ""}`}>
             <Link to="/" onClick={closeAll}>
-              Home
+              HOME
             </Link>
             <Link to="/about" onClick={closeAll}>
-              About
+              ABOUT
             </Link>
 
             <button
@@ -52,7 +52,7 @@ const Navbar = () => {
                 setActivePanel(activePanel === "services" ? null : "services")
               }
             >
-              <span>Services</span>
+              <span>SERVICES</span>
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M6 9l6 6 6-6" />
               </svg>
@@ -64,17 +64,17 @@ const Navbar = () => {
                 setActivePanel(activePanel === "industries" ? null : "industries")
               }
             >
-              <span>Industries</span>
+              <span>INDUSTRIES</span>
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M6 9l6 6 6-6" />
               </svg>
             </button>
 
             <Link to="/case-studies" onClick={closeAll}>
-              Case Studies
+              CASE STUDIES
             </Link>
             <Link to="/contact" onClick={closeAll}>
-              Contact
+              CONTACT
             </Link>
           </nav>
 
@@ -87,7 +87,7 @@ const Navbar = () => {
                 setMenuOpen(false)
               }}
             >
-              <span className="quote-text">Get a Free Quote</span>
+              <span className="quote-text">GET A FREE QUOTE</span>
               <span className="quote-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24">
                   <path d="M4 6h16v12H4z" />
@@ -166,7 +166,13 @@ const Navbar = () => {
               Startups
             </Link>
             <Link to="/industries/b2b" onClick={closeAll}>
-              B2B
+              Corporate / B2B
+            </Link>
+            <Link to="/industries/hospitality" onClick={closeAll}>
+              Hospitality
+            </Link>
+            <Link to="/industries/personal-brand" onClick={closeAll}>
+              Personal Brands
             </Link>
           </div>
         </div>

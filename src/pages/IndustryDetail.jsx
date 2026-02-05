@@ -21,17 +21,17 @@ const IndustryDetail = () => {
         <h1>{industry.title}</h1>
 
         <div className="card" style={{ marginTop: "30px" }}>
-          <h3>Overview</h3>
+          <h3>{industry.overviewTitle || "Overview"}</h3>
           <p>{industry.intro}</p>
         </div>
 
         <div className="card" style={{ marginTop: "30px" }}>
-          <h3>Our Solutions</h3>
+          <h3>{industry.solutionsTitle || "Our Solutions"}</h3>
           <p>{industry.solutions}</p>
         </div>
 
         <div className="card" style={{ marginTop: "30px" }}>
-          <h3>Results You Can Expect</h3>
+          <h3>{industry.resultsTitle || "Results You Can Expect"}</h3>
           <p>{industry.results}</p>
         </div>
       </div>

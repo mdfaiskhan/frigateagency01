@@ -15,16 +15,21 @@
 //15 global responsive typography
 
 
+$font-body: "Inter", sans-serif;
+$font-heading: "Inter", sans-serif;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
 /* ========================
    1. THEME VARIABLES
 ======================== */
-$primary: #4F7DF3;
-$accent: #22D3EE;
-$bg-main: #070B12;
-$bg-card: #111827;
-$text-main: #CBD5E1;
-$text-heading: #F8FAFC;
-$border-soft: rgba(255,255,255,.08);
+$primary: #000000;        /* Primary CTA */
+$accent: #80FFF9;         /* Emergent Cyan */
+$bg-main: #111111;        /* Background */
+$bg-card: #222222;        /* Card */
+$text-main: #DDDDE6;      /* Muted foreground */
+$text-heading: #FFFFFF;   /* Foreground */
+$border-soft: rgba(255,255,255,.12);
 
 
 /* ========================
@@ -37,8 +42,8 @@ $border-soft: rgba(255,255,255,.08);
 }
 
 body {
-  background: radial-gradient(circle at top, #0B1220, #070B12);
-  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at top, #1A1A1A, #111111);
+  font-family: $font-body;
   color: $text-main;
   line-height: 1.7;
 }
@@ -48,9 +53,10 @@ body {
    3. TYPOGRAPHY
 ======================== */
 h1, h2, h3, h4 {
-  font-family: 'Oswald', sans-serif;
+  font-family: $font-heading;
   color: $text-heading;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
+  font-weight: 700;
 }
 
 p {
@@ -76,19 +82,19 @@ p {
    5. BUTTONS
 ======================== */
 .btn-primary {
-  background: linear-gradient(135deg, $primary, $accent);
-  color: #fff;
+  background: #111111;
+  color: #ffffff;
   padding: 14px 34px;
   border-radius: 999px;
-  border: none;
+  border: 1px solid rgba(255,255,255,0.12);
   cursor: pointer;
   font-weight: 600;
   transition: all .35s ease;
 }
 
 .btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 40px rgba(79,125,243,.35);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
 }
 
 
@@ -96,18 +102,18 @@ p {
    6. CARDS
 ======================== */
 .card {
-  background: linear-gradient(180deg, rgba(255,255,255,.04), transparent);
-  border: 1px solid $border-soft;
+  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.08);
   border-radius: 16px;
   padding: 36px;
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(16px) saturate(130%);
   transition: all .4s ease;
 }
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 25px 80px rgba(0,0,0,.6);
-  border-color: rgba(79,125,243,.4);
+  box-shadow: 0 25px 80px rgba(0,0,0,.55);
+  border-color: rgba(255,255,255,0.18);
 }
 
 /* ========================
@@ -118,9 +124,10 @@ p {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(7, 11, 18, 0.85);
-  backdrop-filter: blur(14px);
-  border-bottom: 1px solid $border-soft;
+  background: rgba(18, 18, 18, 0.55);
+  backdrop-filter: blur(22px) saturate(160%);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
 }
 
 .navbar-inner {
@@ -156,11 +163,11 @@ p {
   font-weight: 700;
   letter-spacing: 1.5px;
   text-decoration: none;
-  color: $text-heading;
+  color: #FFFFFF;
 }
 
 .navbar-logo span {
-  color: $primary;
+  color: $accent;
 }
 
 
@@ -230,6 +237,7 @@ p {
   text-decoration: none;
   color: $text-main;
   font-weight: 500;
+  font-size: 14px;
 }
 
 
@@ -264,7 +272,7 @@ p {
   background: none;
   border: none;
   color: $text-main;
-  font-size: 16px;
+  font-size: 14px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -459,16 +467,16 @@ p {
 
 .panel-grid a {
   padding: 14px 16px;
-  border: 1px solid $border-soft;
+  border: 1px solid rgba(255,255,255,0.18);
   border-radius: 10px;
   text-decoration: none;
-  color: $text-main;
+  color: $text-heading;
   transition: .3s;
 }
 
 .panel-grid a:hover {
-  background: rgba(79,125,243,.15);
-  border-color: $primary;
+  background: rgba(255,255,255,0.06);
+  border-color: rgba(255,255,255,0.35);
 }
 
 /* QUOTE FORM */
@@ -494,8 +502,8 @@ p {
    14. FOOTER
 ======================== */
 .footer {
-  border-top: 1px solid $border-soft;
-  background: linear-gradient(to top, #070B12, #0B1220);
+  border-top: 1px solid rgba(255,255,255,0.08);
+  background: linear-gradient(to top, #0F0F10, #151517);
   padding: 80px 0 40px;
 }
 
@@ -523,6 +531,44 @@ p {
   color: $accent;
 }
 
+.footer-socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.footer-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.12);
+  color: $text-heading;
+  transition: all 0.3s ease;
+}
+
+.footer-socials a svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.footer-socials a:hover {
+  border-color: rgba(255,255,255,0.35);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 767px) {
+  .footer-grid {
+    gap: 28px;
+  }
+
+  .footer-socials {
+    justify-content: flex-start;
+  }
+}
 .footer-bottom {
   margin-top: 50px;
   padding-top: 30px;
@@ -1225,6 +1271,162 @@ p {
   align-items: stretch;
 }
 
+/* =========================
+   INDUSTRIES — EXPERTISE
+========================= */
+
+.industries-expertise {
+  background: #f3f1ec;
+  color: #111111;
+}
+
+.industries-expertise .container {
+  max-width: 1200px;
+}
+
+.industries-expertise-inner {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.industries-expertise-left h2 {
+  color: #111111;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+.industries-eyebrow {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.industries-copy {
+  color: #3d3d3d;
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+
+.industries-cta {
+  background: #c43a34;
+  border: none;
+  color: #ffffff;
+  padding: 12px 26px;
+  font-size: 13px;
+  letter-spacing: 0.6px;
+}
+
+.industries-cta:hover {
+  background: #b6342f;
+  box-shadow: 0 10px 24px rgba(196, 58, 52, 0.35);
+}
+
+.industries-expertise-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.industries-chip-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  width: 100%;
+  max-width: 520px;
+}
+
+.industries-chip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #e6e4df;
+  border: 1px solid #d7d3cc;
+  border-radius: 12px;
+  padding: 14px 12px;
+  color: #111111;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+}
+
+.chip-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: #f5f3ee;
+  border: 1px solid #d7d3cc;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.chip-icon::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: block;
+  background: #111111;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.chip-icon.cart::before {
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='black' d='M7 4h-2l-1 2h2l3.6 7.59-1.35 2.44A1 1 0 0 0 9 18h10v-2H9.42a.25.25 0 0 1-.22-.37l.9-1.63h7.45a1 1 0 0 0 .9-.55L21 7H6.21L5.27 5H7V4zm0 16a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm10 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'/></svg>");
+}
+.chip-icon.grad::before {
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='black' d='M12 3 1 9l11 6 9-4.91V17h2V9L12 3zm0 13L5 12v3.5C5 18.42 8.58 20 12 20s7-1.58 7-4.5V12l-7 4z'/></svg>");
+}
+.chip-icon.megaphone::before {
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='black' d='M3 11v2h2l3 5h3l-3-5h6l5 3V8l-5 3H8l3-5H8L5 11H3z'/></svg>");
+}
+.chip-icon.car::before {
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='black' d='M5 11l1.5-4.5h11L19 11v7h-2v-2H7v2H5v-7zm2.5-3L6.6 10h10.8l-.9-2H7.5zM7.5 16a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm9 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z'/></svg>");
+}
+.chip-icon.bed::before {
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='black' d='M7 7a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm-4 6h18a2 2 0 0 1 2 2v4h-2v-2H3v2H1v-6a2 2 0 0 1 2-2zm3-2h6a2 2 0 0 1 2 2v1H4v-1a2 2 0 0 1 2-2z'/></svg>");
+}
+.chip-icon.globe::before {
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='black' d='M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm7.9 9H16a15.2 15.2 0 0 0-1.2-6A8.02 8.02 0 0 1 19.9 11zM12 4c1.1 1.4 2 3.6 2.2 7H9.8c.2-3.4 1.1-5.6 2.2-7zM4.1 11A8.02 8.02 0 0 1 9.2 5c-.7 1.4-1.1 3.2-1.2 6H4.1zM4.1 13H8c.1 2.8.6 4.6 1.2 6A8.02 8.02 0 0 1 4.1 13zM12 20c-1.1-1.4-2-3.6-2.2-7h4.4c-.2 3.4-1.1 5.6-2.2 7zm2.8-1c.7-1.4 1.1-3.2 1.2-6h3.9a8.02 8.02 0 0 1-5.1 6z'/></svg>");
+}
+.chip-icon.heart::before {
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='black' d='M12 21s-7-4.35-9.33-8.2C.84 9.4 2.4 6 6 6c1.9 0 3.4 1 4.2 2.3C11 7 12.5 6 14.4 6c3.6 0 5.2 3.4 3.33 6.8C19 16.65 12 21 12 21z'/></svg>");
+}
+.chip-icon.home::before {
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='black' d='M12 3 3 10h2v9h6v-6h2v6h6v-9h2L12 3z'/></svg>");
+}
+.chip-icon.coin::before {
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='black' d='M12 2C7.6 2 4 3.8 4 6v12c0 2.2 3.6 4 8 4s8-1.8 8-4V6c0-2.2-3.6-4-8-4zm0 2c3.3 0 6 .9 6 2s-2.7 2-6 2-6-.9-6-2 2.7-2 6-2zm0 16c-3.3 0-6-.9-6-2V9.7c1.5 1 3.9 1.6 6 1.6s4.5-.6 6-1.6V18c0 1.1-2.7 2-6 2z'/></svg>");
+}
+
+.chip-icon.rocket::before {
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='black' d='M14 3c3.5 0 5 2.5 5 6l-4 4-3-3 4-4c-.9-1.1-1.9-1-2-1h-2L8 9l-3 3 3 3-2 2-4-4 2-2 3 3 3-3-3-3 4-4h2c.1 0 1.1-.9 2-2zM14 14l3 3-4 4c-3.5 0-5-2.5-5-6l4-4 2 2z'/></svg>");
+}
+
+.chip-icon.user::before {
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='black' d='M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm0 2c-4.4 0-8 2-8 4.5V21h16v-2.5c0-2.5-3.6-4.5-8-4.5z'/></svg>");
+}
+
+@media (max-width: 1023px) {
+  .industries-expertise-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .industries-expertise-right {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+  .industries-chip-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 
 
 /* =========================
